@@ -1,0 +1,45 @@
+.welcome-sidebar {
+  display: none;
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  .welcome-sidebar {
+    background-color: #fff;
+    writing-mode: vertical-rl;
+    grid-area: sidebar;
+    width: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 2em);
+    position: fixed;
+    padding: 1em 0 2em 0;
+  }
+
+  .welcome-sidebar > p {
+    writing-mode: sideways-lr;
+  }
+  .welcome-sidebar > .vertical-line {
+    height: 40px;
+    width: 3px;
+    background-color: #34495e;
+    margin: 16px;
+  }
+
+  .sidebar-spacer {
+    flex: 1;
+  }
+
+  .social i {
+    padding: 8px;
+  }
+
+  .social i:hover {
+    background-color: #c0392b;
+    color: #fff;
+    padding: 8px;
+    border-radius: 50%;
+  }
+}
